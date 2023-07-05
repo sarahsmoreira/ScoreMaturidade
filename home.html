@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Score Maturidade</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="funcoes.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <main>
+        <img src="Imagens/transformCabeçalho.png" alt="Logo Transform - Test Maturity. O logo é um robo que se transforma em um carro com as cores da Neon" id = "imgTransform">
+        <h1>Sejam Bem Vindos!!!</h1>
+        <h2>Avaliação Score de Maturidade</h2>
+        <ol type="1"> 
+            <!--<form action="grafana" method="post">-->
+            <h3>Planejamento</h3>
+            <li>O time tem recorrência, sempre que necessário, de cerimônia de Business Refining</li>
+            <select id="item1" required>
+                <option></option>
+                <option value="3">SIM</option>
+                <option value="0">NÃO</option>
+                <option value="3">NÃO SE APLICA</option>
+                </select>
+            <li>O time refina todos os cards em cerimônias de Tech Refining antes de iniciar o desenvolvimento</li>
+            <select id="item2" required>
+                <option></option>
+                <option value="5">SIM</option>
+                <option value="0">NÃO</option>
+                <option value="5">NÃO SE APLICA</option>
+                </select>
+            <li>O time conhece e segue o conceito INVEST para melhorar a criação dos cards</li>
+            <select id="item3" required>
+                <option></option>
+                <option value="2">SIM</option>
+                <option value="0">NÃO</option>
+                <option value="2">NÃO SE APLICA</option>
+                </select>
+            <li>Os cards do time só seguem para desenvolvimento se tiverem template enriquecido com o máximo de informações úteis possíveis para guiar um bom desenvolvimento e testes</li>
+            <select id="item4" required>
+                <option></option>
+                <option value="4">SIM</option>
+                <option value="0">NÃO</option>
+                <option value="4">NÃO SE APLICA</option>
+                </select>
+            <li>O time utiliza a metodologia BDD para refinar os cenários de aceitação das stories/tasks</li>
+            <select id="item5" required>
+                <option></option>
+                <option value="3">SIM</option>
+                <option value="0">NÃO</option>
+                <option value="3">NÃO SE APLICA</option>
+                </select>
+            <h3>Execução</h3>
+            <li>O time realiza o fluxo de testes das demandas durante o ciclo de desenvolvimento (coluna testing)</li>
+            <select id="item6" required>
+                <option></option>
+                <option value="5">SIM</option>
+                <option value="0">NÃO</option>
+                <option value="5">NÃO SE APLICA</option>
+                </select>
+            <li>O time realiza a gestão de testes, ciclos e execuções através do Zephyr Scale</li>
+            <select id="item7" required>
+                <option></option>
+                <option value="4">SIM</option>
+                <option value="0">NÃO</option>
+                <option value="4">NÃO SE APLICA</option>
+                </select>
+            <li>O time faz uso de geradores de massa de teste do QA Plataforma (Cantina)</li>
+            <select id="item8" required>
+                <option></option>
+                <option value="1">SIM</option>
+                <option value="0">NÃO</option>
+                <option value="1">NÃO SE APLICA</option>
+                </select>
+            <li>O time segue o fluxo correto de aprovação de GMUD</li>
+            <select id="item9" required>
+                <option></option>
+                <option value="5">SIM</option>
+                <option value="0">NÃO</option>
+                <option value="5">NÃO SE APLICA</option>
+                </select>
+            <br>
+            <!-- <Input type="submit" value="FINALIZAR"></Input>-->
+            <input type="button" onclick="finalizar()" value="FINALIZAR"/>
+        <!--</form>-->
+        </ol>
+        
+    </main>
+    
+</body>
+</html>
